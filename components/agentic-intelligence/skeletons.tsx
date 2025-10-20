@@ -8,15 +8,6 @@ import {
   WindowIcon,
 } from "@/icons/bento-icons";
 import { DivideX } from "../divide";
-import {
-  AnthropicLogo,
-  LinearLogo,
-  MetaLogo,
-  NotionLogo,
-  OpenAILogo,
-  SlackLogo,
-  SupabaseLogo,
-} from "@/icons/general";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
