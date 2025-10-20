@@ -7,20 +7,19 @@ export const AuthIllustration = () => {
     <div className="relative flex min-h-80 flex-col items-start justify-end overflow-hidden rounded-2xl bg-black p-4 md:p-8">
       <div className="relative z-40 mb-2 flex items-center gap-2">
         <p className="rounded-md bg-black/50 px-2 py-1 text-xs text-white">
-          Product Company
+          Banking Platform
         </p>
         <p className="rounded-md bg-black/50 px-2 py-1 text-xs text-white">
-          Cloud Management
+          AI Copilot
         </p>
       </div>
       <div className="relative z-40 max-w-sm rounded-xl bg-black/50 p-4 backdrop-blur-sm">
         <h2 className="text-white">
-          Nodus has completely changed how we work. What used to take hours
-          every week is now fully automated.
+          Tandem reduced our support tickets by 65% while accelerating user onboarding. Our users now discover features we didn't even know they needed help with.
         </h2>
-        <p className="mt-4 text-sm text-white/50">Gina Clinton</p>
+        <p className="mt-4 text-sm text-white/50">Marie Dupont</p>
         <p className="mt-1 text-sm text-white/50">
-          Head of Product, <span className="font-bold">Acme Inc.</span>
+          VP Product, <span className="font-bold">Qonto</span>
         </p>
       </div>
 

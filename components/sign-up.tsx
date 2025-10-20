@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./container";
-import { LogoSVG } from "./logo";
+import Image from "next/image";
 import { Heading } from "./heading";
 import { SubHeading } from "./subheading";
 import { Input } from "./ui/input";
@@ -19,7 +19,13 @@ export const SignUp = () => {
     <Container className="min-h-[calc(100vh-8rem)] py-10 md:py-20">
       <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 md:px-8 lg:gap-40">
         <div>
-          <LogoSVG />
+          <Image
+            src="/logos/logo-tandem.png"
+            alt="Tandem AI"
+            width={80}
+            height={24}
+            className="h-5 w-auto dark:invert dark:filter"
+          />
           <Heading className="mt-4 text-left lg:text-4xl">
             Get Started with Tandem
           </Heading>
