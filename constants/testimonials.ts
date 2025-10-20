@@ -1,0 +1,98 @@
+export const testimonials = [
+  {
+    src: "/logos/client-aircall.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "+20%",
+    sideSubText: "Conversion Rate",
+    quote:
+      "Tandem increased conversion to paid by 20% for 1-25 seats accounts. Small businesses were struggling with decisions our AM typically guide. Now Tandem gives every user what feels like their own Customer Success Manager.",
+    name: "Tom Chen",
+    position: "CPO",
+    company: "Aircall",
+    avatar: "/avatar-sellsy.png",
+  },
+  {
+    src: "/logos/client-sellsy.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "+18%",
+    sideSubText: "Activation Lift",
+    quote:
+      "Tandem transformed our user onboarding completely. We saw an 18% increase in activation rate and our users are now onboarding themselves in minutes instead of days. The impact on our customer success team has been phenomenal.",
+    name: "Laurent Delacroix",
+    position: "Head of Customer Success",
+    company: "Sellsy",
+    avatar: "/avatar-sellsy.png",
+  },
+  {
+    src: "/logos/client-qonto.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "1M+",
+    sideSubText: "users",
+    quote:
+      "We drive feature adoption and revenue expansion for over 1 million users with Tandem.",
+    name: "Sophie Martin",
+    position: "VP Product",
+    company: "Qonto",
+    avatar: "/avatar-qonto.png",
+  },
+  {
+    src: "/logos/client-kraken.png",
+    logoClassName: "h-10 w-auto",
+    sideText: "70%",
+    sideSubText: "Ticket Deflection",
+    quote:
+      "Tandem deflects 70% of our support tickets by answering questions instantly and contextually. Our support team can now focus on complex issues while Tandem handles the routine questions at scale.",
+    name: "Michael Rivera",
+    position: "Head of Support",
+    company: "Kraken",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287&auto=format&fit=crop",
+  },
+  {
+    src: "/logos/client-spendesk.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "3x",
+    sideSubText: "Faster Setup",
+    quote:
+      "Users complete their setup 3x faster with Tandem's AI assistance. What used to take days of back-and-forth with our CS team now happens in minutes, completely autonomously.",
+    name: "Emma Dubois",
+    position: "Customer Success Lead",
+    company: "Spendesk",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1361&auto=format&fit=crop",
+  },
+  {
+    src: "/logos/client-qonto.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "90%",
+    sideSubText: "User Satisfaction",
+    quote:
+      "The native integration approach of Tandem is what sets it apart. No clunky overlays or bolt-ons - just seamless guidance that feels like a natural part of our product. Our user satisfaction scores have never been higher.",
+    name: "Alexandre Petit",
+    position: "Product Manager",
+    company: "Qonto",
+    avatar: "https://images.unsplash.com/photo-1624561254177-28de5f2c36eb?q=80&w=1335&auto=format&fit=crop",
+  },
+  {
+    src: "/logos/client-aircall.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "24/7",
+    sideSubText: "AI Guidance",
+    quote:
+      "Tandem works around the clock, providing every user with personalized guidance whenever they need it. It's like scaling our best CSM to serve every single user simultaneously.",
+    name: "Sarah Johnson",
+    position: "Director of Customer Experience",
+    company: "Aircall",
+    avatar: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=1289&auto=format&fit=crop",
+  },
+  {
+    src: "/logos/client-sellsy.png",
+    logoClassName: "h-8 w-auto",
+    sideText: "Zero",
+    sideSubText: "Code Required",
+    quote:
+      "Our non-technical teams can design, update, and launch user flows without touching code. This has dramatically accelerated our ability to iterate and improve the onboarding experience.",
+    name: "Pierre Fontaine",
+    position: "Head of Operations",
+    company: "Sellsy",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1287&auto=format&fit=crop",
+  },
+];
