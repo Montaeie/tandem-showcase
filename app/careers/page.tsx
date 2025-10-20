@@ -184,11 +184,13 @@ export default function CareersPage() {
         </div>
         </div>
       </Container>
-      <Container id="open-roles" className="border-divide flex flex-col items-center border-x border-b py-16 pb-20">
-        <Badge text="Open Roles" />
-        <SectionHeading className="mt-4 px-4 text-center">
-          Open Positions
-        </SectionHeading>
+      <Container className="border-divide flex flex-col items-center border-x border-b py-16 pb-20">
+        <div id="open-roles">
+          <Badge text="Open Roles" />
+          <SectionHeading className="mt-4 px-4 text-center">
+            Open Positions
+          </SectionHeading>
+        </div>
         <div className="mt-12 w-full">
           {uniqueDepartments.map((department) => (
             <JobSection
