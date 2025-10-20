@@ -21,37 +21,55 @@ export const SignUp = () => {
         <div>
           <LogoSVG />
           <Heading className="mt-4 text-left lg:text-4xl">
-            Create an account
+            Get Started with Tandem
           </Heading>
           <SubHeading as="p" className="mt-4 max-w-xl text-left">
-            Start transforming your user experience with native AI guidance. Join companies serving millions of users worldwide.
+            Join Qonto, Aircall, Sellsy and other leading companies using Tandem to guide millions of users. Start your free trial today.
           </SubHeading>
-          <form className="mt-6 flex flex-col gap-8">
-            <div className="h-full w-full rounded-2xl">
-              <Label>Name</Label>
+          <form className="mt-6 flex flex-col gap-6">
+            <div className="h-full w-full">
+              <Label>Full Name *</Label>
               <Input
                 type="text"
-                className="mt-4 border-none focus:ring-gray-300"
+                required
+                className="mt-2 border-none focus:ring-gray-300"
                 placeholder="John Smith"
               />
             </div>
-            <div className="h-full w-full rounded-2xl">
-              <Label>Email</Label>
+            <div className="h-full w-full">
+              <Label>Work Email *</Label>
               <Input
                 type="email"
-                className="mt-4 border-none focus:ring-gray-300"
-                placeholder="youremail@yourdomain.com"
+                required
+                className="mt-2 border-none focus:ring-gray-300"
+                placeholder="john@yourcompany.com"
               />
             </div>
-            <div className="h-full w-full rounded-2xl">
-              <Label>Password</Label>
+            <div className="h-full w-full">
+              <Label>Company Name *</Label>
+              <Input
+                type="text"
+                required
+                className="mt-2 border-none focus:ring-gray-300"
+                placeholder="Your Company"
+              />
+            </div>
+            <div className="h-full w-full">
+              <Label>Password *</Label>
               <Input
                 type="password"
-                className="mt-4 border-none focus:ring-gray-300"
-                placeholder="Create a password"
+                required
+                className="mt-2 border-none focus:ring-gray-300"
+                placeholder="Create a secure password"
               />
+              <p className="mt-1 text-xs text-gray-500 dark:text-neutral-400">
+                Minimum 8 characters
+              </p>
             </div>
-            <Button>Sign up</Button>
+            <Button type="submit" className="w-full">Start Free Trial</Button>
+            <p className="text-center text-xs text-gray-500 dark:text-neutral-400">
+              By signing up, you agree to our Terms of Service and Privacy Policy. No credit card required.
+            </p>
             <div className="mt-2 flex items-center">
               <div className="h-px flex-1 bg-gray-200 dark:bg-neutral-700"></div>
               <span className="px-4 text-sm text-gray-500 dark:text-neutral-400">
@@ -60,24 +78,30 @@ export const SignUp = () => {
               <div className="h-px flex-1 bg-gray-200 dark:bg-neutral-700"></div>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               <Button
                 variant="secondary"
-                className="flex w-full justify-center py-4"
+                className="flex w-full items-center justify-center gap-2 py-4"
+                type="button"
               >
-                <GoogleIcon />
+                <GoogleIcon className="h-5 w-5" />
+                <span className="hidden sm:inline">Google</span>
               </Button>
               <Button
                 variant="secondary"
-                className="flex w-full justify-center py-4"
+                className="flex w-full items-center justify-center gap-2 py-4"
+                type="button"
               >
-                <FacebookIcon />
+                <FacebookIcon className="h-5 w-5" />
+                <span className="hidden sm:inline">Facebook</span>
               </Button>
               <Button
                 variant="secondary"
-                className="flex w-full justify-center py-4"
+                className="flex w-full items-center justify-center gap-2 py-4"
+                type="button"
               >
-                <AppleIcon />
+                <AppleIcon className="h-5 w-5" />
+                <span className="hidden sm:inline">Apple</span>
               </Button>
             </div>
           </form>

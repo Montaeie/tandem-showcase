@@ -26,24 +26,34 @@ export const SignIn = () => {
           <SubHeading as="p" className="mt-4 max-w-xl text-left">
             Sign in to access your Tandem dashboard and manage your AI copilot integrations.
           </SubHeading>
-          <form className="mt-6 flex flex-col gap-8">
-            <div className="h-full w-full rounded-2xl">
-              <Label>Email</Label>
+          <form className="mt-6 flex flex-col gap-6">
+            <div className="h-full w-full">
+              <Label>Work Email *</Label>
               <Input
                 type="email"
-                className="mt-4 border-none focus:ring-gray-300"
-                placeholder="youremail@yourdomain.com"
+                required
+                className="mt-2 border-none focus:ring-gray-300"
+                placeholder="john@yourcompany.com"
               />
             </div>
-            <div className="h-full w-full rounded-2xl">
-              <Label>Password</Label>
+            <div className="h-full w-full">
+              <div className="flex items-center justify-between">
+                <Label>Password *</Label>
+                <Link
+                  href="/forgot-password"
+                  className="text-xs text-brand hover:underline"
+                >
+                  Forgot password?
+                </Link>
+              </div>
               <Input
                 type="password"
-                className="mt-4 border-none focus:ring-gray-300"
-                placeholder="Create a password"
+                required
+                className="mt-2 border-none focus:ring-gray-300"
+                placeholder="Enter your password"
               />
             </div>
-            <Button>Sign in</Button>
+            <Button type="submit" className="w-full">Sign in</Button>
             <div className="mt-2 flex items-center">
               <div className="h-px flex-1 bg-gray-200 dark:bg-neutral-700"></div>
               <span className="px-4 text-sm text-gray-500 dark:text-neutral-400">
@@ -52,24 +62,30 @@ export const SignIn = () => {
               <div className="h-px flex-1 bg-gray-200 dark:bg-neutral-700"></div>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               <Button
                 variant="secondary"
-                className="flex w-full justify-center py-4"
+                className="flex w-full items-center justify-center gap-2 py-4"
+                type="button"
               >
-                <GoogleIcon />
+                <GoogleIcon className="h-5 w-5" />
+                <span className="hidden sm:inline">Google</span>
               </Button>
               <Button
                 variant="secondary"
-                className="flex w-full justify-center py-4"
+                className="flex w-full items-center justify-center gap-2 py-4"
+                type="button"
               >
-                <FacebookIcon />
+                <FacebookIcon className="h-5 w-5" />
+                <span className="hidden sm:inline">Facebook</span>
               </Button>
               <Button
                 variant="secondary"
-                className="flex w-full justify-center py-4"
+                className="flex w-full items-center justify-center gap-2 py-4"
+                type="button"
               >
-                <AppleIcon />
+                <AppleIcon className="h-5 w-5" />
+                <span className="hidden sm:inline">Apple</span>
               </Button>
             </div>
           </form>
