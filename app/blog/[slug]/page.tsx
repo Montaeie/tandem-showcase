@@ -1,8 +1,15 @@
 import { Container } from "@/components/container";
 import { Metadata } from "next";
-import { getBlogFrontMatterBySlug, getSingleBlog } from "@/lib/blogs";
+import { getBlogFrontMatterBySlug, getSingleBlog, getBlogs } from "@/lib/blogs";
 import { redirect } from "next/navigation";
 import { DivideX } from "@/components/divide";
+
+export async function generateStaticParams() {
+  const blogs = await getBlogs();
+  return blogs.map((blog) => ({
+    slug: blog.slug,
+  }));
+}
 
 export async function generateMetadata({
   params,
