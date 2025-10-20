@@ -97,7 +97,7 @@ export const LLMModelSelectorSkeleton = () => {
             }}
           >
             <div className="flex items-center gap-2">
-              <model.logo className="h-4 w-4 shrink-0" />
+              {model.logo()}
               <span className="text-charcoal-700 text-sm font-medium dark:text-neutral-200">
                 {model.name}
               </span>
